@@ -1,4 +1,4 @@
-## Hosted URL : 
+## Hosted URL : https://streamify-sable.vercel.app/
 
 ## Overview
 
