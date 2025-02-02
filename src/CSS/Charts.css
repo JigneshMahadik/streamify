@@ -1,0 +1,48 @@
+.charts-container {
+    padding: 16px;
+    max-width: 100%;
+    margin: 5% 20px 4% 20px;
+    background-color: #1a2b3c;
+    border-radius: 10px;
+  }
+  
+  .btn-toggle {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  
+  .tab-btn {
+    padding: 8px 16px;
+    border: 1px solid #007bff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: transparent;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .tab-btn.active {
+    background-color: #1b4a52;
+    color: white;
+  }
+  
+  .tab-btn:hover {
+    /* background-color: rgba(0, 0, 0, 0.1); */
+  }
+  
+  .tab-content {
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tab-heading {
+    /* font-size: 10px; */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  

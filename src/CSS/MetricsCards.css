@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  width: 100%;
+}
+
+.card {
+  flex: 1 1 calc(20% - 20px); /* Flexible width, allowing up to 5 in a row */
+  max-width: 250px; /* Limits the maximum size */
+  min-width: 150px; /* Prevents it from becoming too small */
+  background-color: #1a2b3c;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Soft shadow effect */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  align-items: center;
+  cursor: pointer;
+  border-color: #007bff;
+  color: white;
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-5px); /* Moves the card slightly up */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  background-color: #1b4a52; /* Change background */
+}
+
+.card:hover .card-title,
+.card:hover .card-value {
+  color: #fff; /* Change text color on hover */
+  font-size: 18px; 
+  /* font-weight: 600; */
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin: 10px 0 5px;
+  font-family: 'Playfair Display', serif;
+}
+
+.card-value {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  font-size: 18px; 
+  /* font-weight: 600; */
+  font-family: 'Playfair Display', serif;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .card {
+    flex: 1 1 calc(33.33% - 20px); /* 3 in a row on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 calc(50% - 20px); /* 2 in a row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 100%; /* Full width on mobile */
+  }
+}
